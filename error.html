@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website with Errors</title>
+  <style>
+    /* Some CSS, but there's a mistake below */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    nav {
+      list-style-type: none;
+    }
+
+    /* Missing closing curly brace below */
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <!-- Incorrect closing tag here -->
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>Welcome to My Website</h1>
+      <p>This is a website with some errors in the code.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Our company is awesome, but this website has errors!</p>
+      <ul>
+        <li>We make mistakes!</li>
+        <li>But we fix them too.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>If you have any questions, you can reach us.</p>
+      <form action="#">
+        <!-- Missing input type here -->
+        <input name="email" placeholder="Enter your email">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My Error-Prone Website</p>
+  </footer>
+
+</body>
+</html>
