@@ -17,6 +17,11 @@
       font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
     /* Header Styles */
@@ -24,6 +29,8 @@
       background-color: #333;
       color: white;
       padding: 20px;
+      width: 100%;
+      text-align: center;
     }
 
     header .logo img {
@@ -56,7 +63,10 @@
 
     /* Main Content */
     main {
+      width: 80%;
+      max-width: 800px;
       padding: 20px;
+      text-align: center;
     }
 
     section {
@@ -73,6 +83,9 @@
       color: white;
       text-align: center;
       padding: 10px;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
     }
 
     footer p {
@@ -97,13 +110,13 @@
 
   <main>
     <section id="home">
-      <h1>Welcome to My Website </h1>
+      <h1>Welcome to My Website</h1>
       <p>This is a simple static website created using HTML and CSS.</p>
     </section>
 
     <section id="about">
       <h2>About Us</h2>
-      <p>We are a fictional company providing awesome services to the world. </p>
+      <p>We are a fictional company providing awesome services to the world.</p>
     </section>
 
     <section id="contact">
@@ -116,6 +129,8 @@
     </section>
   </main>
 
- 
+  <footer>
+    <p>&copy; 2024 My Simple Website</p>
+  </footer>
 </body>
 </html>
